@@ -49,7 +49,11 @@
         }
 
         .organizers {
-            font-weight: bold;
+            font-weight: normal; /* Remove bold for the entire section */
+        }
+
+        .organizer-name {
+            font-weight: bold; /* Make the name bold */
         }
     </style>
 </head>
@@ -74,7 +78,7 @@
 
         <div class="program">
             <h2>Program</h2>
-            <p>Date, time, title, and speakers (To Be Determined)</p>
+            <p>Date, time, title, and speakers (To Be Announced)</p>
         </div>
 
         <div class="venue">
@@ -85,12 +89,12 @@
         <div class="organizers">
             <h2>Organizers</h2>
             <p>
-                J. Senthilnath, Senior Scientist, Institute for Infocomm Research (I2R), A*STAR, Singapore
-                <br>Email: J_Senthilnath@i2r.a-star.edu.sg
+                <span class="organizer-name">J. Senthilnath</span>, Senior Scientist, Institute for Infocomm Research (I2R), A*STAR, Singapore
+                <br><span class="organizer-name">Email</span>: J_Senthilnath@i2r.a-star.edu.sg
             </p>
             <p>
-                Nagarajan Raghavan, Associate Professor, Singapore University of Technology & Design (SUTD), Singapore
-                <br>Email: nagarajan@sutd.edu.sg
+                <span class="organizer-name">Nagarajan Raghavan</span>, Associate Professor, Singapore University of Technology & Design (SUTD), Singapore
+                <br><span class="organizer-name">Email</span>: nagarajan@sutd.edu.sg
             </p>
         </div>
     </div>
