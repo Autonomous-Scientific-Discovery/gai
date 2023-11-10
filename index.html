@@ -49,11 +49,34 @@
         }
 
         .organizers {
-            font-weight: normal; /* Remove bold for the entire section */
+          margin-bottom: 20px; /* Add space below the heading */
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .organizer {
+          width: 48%; /* Adjust the width as needed */
+          text-align: center;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+
+        .organizer img {
+          width: 60%;
+          height: 200px;
+          border-radius: 8px 8px 0 0;
+        }
+
+        .organizer-text {
+          max-width: 100%;
+          padding: 10px;
+          text-align: left;
         }
 
         .organizer-name {
-            font-weight: bold; /* Make the name bold */
+          font-weight: bold;
         }
     </style>
 </head>
@@ -76,49 +99,68 @@
             <li>Applications to thin film materials, composite materials, inorganic crystals, and molecular dynamics</li>
         </ul>
 
-        
-
         <div class="program">
-            <h2>Program</h2>
-            <table>
-                <tr>
-                    <th style="background-color: #0073e6; color: #fff;">Time</th>
-                    <th style="background-color: #0073e6; color: #fff;">Title</th>
-                    <th style="background-color: #0073e6; color: #fff;">Speaker</th>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">9:00 AM - 9:45 AM</td>
-                    <td>Introduction to Generative Artificial Intelligence</td>
-                    <td>J. Senthilnath</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">9:45 AM - 10:30 AM</td>
-                    <td>Feature Representation for Predicting Physical, Chemical, and Mechanical Properties</td>
-                    <td>Nagarajan Raghavan</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">10:30 AM - 11:00 AM</td>
-                    <td colspan="2" style="text-align: center; background-color: #0073e6; color: #fff;">Coffee Break</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">11:00 AM - 12:00 PM</td>
-                    <td>AI-driven Scientific Discovery Algorithms</td>
-                    <td>J. Senthilnath</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">12:00 PM - 1:00 PM</td>
-                    <td colspan="2" style="text-align: center; background-color: #0073e6; color: #fff;">Lunch Break</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">1:00 PM - 2:00 PM</td>
-                    <td>Applications to Thin Film Materials</td>
-                    <td>Nagarajan Raghavan</td>
-                    </tr>
-                    <tr>
-                    <td style="background-color: #f5f5f5;">2:00 PM - 2:30 PM</td>
-                    <td colspan="2" style="text-align: center; background-color: #0073e6; color: #fff;">Discussion Panel</td>
-                    </tr>
+          <h2>Program</h2>
+          <style>
+            th:first-child {
+              max-width: 80px; /* Adjust time column width to fit PM and AM without spilling over */
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          </style>
+          <div>
+            <table border="1" cellspacing="0" cellpadding="10" style="width:100%">
+              <tr>
+                <th style="background-color: #0073e6; color: #fff;">S/N</th>
+                <th style="background-color: #0073e6; color: #fff;">Name</th>
+                <th style="background-color: #0073e6; color: #fff;">Affiliation</th>
+                <th style="background-color: #0073e6; color: #fff;">Title</th>
+                <th style="background-color: #0073e6; color: #fff;">Time</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Dr Mahindra Rautela</td>
+                <td>Los Alamos National Laboratory, USA</td>
+                <td>Deep generative modeling approach for composite materials: An accelerated solution of prediction, discovery & design problems</td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Dr Zekun Ren</td>
+                <td>Xinterra Pte. Ltd, Singapore</td>
+                <td>An invertible crystallographic representation for general inverse design of inorganic crystals with targeted properties</td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ruiming Zhu</td>
+                <td>Nanyang Technological University, Singapore</td>
+                <td>Generative Design of Inorganic Materials</td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>TBA</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>TBA</td>
+              </tr>
             </table>
+          </div>
         </div>
 
         <div class="venue">
@@ -126,16 +168,25 @@
             <p>Nanyang Technological University, 50 Nanyang Avenue, Singapore 639798</p>
         </div>
 
+        <h2>Organizers</h2>
         <div class="organizers">
-            <h2>Organizers</h2>
-            <p>
-                <span class="organizer-name">J. Senthilnath</span>, Senior Scientist, Institute for Infocomm Research (I2R), A*STAR, Singapore
-                <br><span class="organizer-name">Email</span>: J_Senthilnath@i2r.a-star.edu.sg
-            </p>
-            <p>
-                <span class="organizer-name">Nagarajan Raghavan</span>, Associate Professor, Singapore University of Technology & Design (SUTD), Singapore
-                <br><span class="organizer-name">Email</span>: nagarajan@sutd.edu.sg
-            </p>
+          <div class="organizer">
+            <img src="Senthil.jpg" alt="J. Senthilnath">
+            <div class="organizer-text">
+              <span class="organizer-name">J. Senthilnath</span>
+              <br>Senior Scientist, Institute for Infocomm Research (I2R), A*STAR, Singapore
+              <br><span class="organizer-name">Email</span>: J_Senthilnath@i2r.a-star.edu.sg
+            </div>
+          </div>
+    
+          <div class="organizer">
+            <img src="Naga.jpg" alt="Nagarajan Raghavan">
+            <div class="organizer-text">
+              <span class="organizer-name">Nagarajan Raghavan</span>
+              <br>Associate Professor, Singapore University of Technology & Design (SUTD), Singapore
+              <br><span class="organizer-name">Email</span>: nagarajan@sutd.edu.sg
+            </div>
+          </div>
         </div>
     </div>
 </body>
